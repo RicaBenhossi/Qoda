@@ -158,7 +158,7 @@
 	// "appPort": [],
 
 	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "pip install -r requirements.txt",
+	"postCreateCommand": "ssh-keyscan -H github.com >> ~/.ssh/known_hosts && ssh-keyscan github.com >> ~/.ssh/known_hosts",
 
 	// Uncomment the next line to have VS Code connect as an existing non-root user in the container.
 	// On Linux, by default, the container user's UID/GID will be updated to match your local user. See
